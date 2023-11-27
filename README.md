@@ -26,25 +26,25 @@ Credentials (Insert your keys and tokens below)
 
 ## Functions
 - xApi()
- - Creates a Tweepy client with the provided credentials.
+- - Creates a Tweepy client with the provided credentials.
 
 - extractTextAndUrl(text)
- - Extracts text and URLs from a given tweet.
+  - Extracts text and URLs from a given tweet.
 
 - get_quote_tweet_id(shortened_url)
- - Expands a shortened URL and returns the quoted tweet's ID.
+  - Expands a shortened URL and returns the quoted tweet's ID.
 
 - get_entire_quoted_tweets(tweet_text)
- - Fetches the entire text of quoted tweets given a tweet text containing URLs.
+  - Fetches the entire text of quoted tweets given a tweet text containing URLs.
 
 - gptModifyer(news_text: str)
- - Uses GPT-4 to modify the provided news text and returns the generated response.
+  - Uses GPT-4 to modify the provided news text and returns the generated response.
 
 - reply()
- - Fetches mentions, processes them, and replies with GPT-4 modified text.
+  - Fetches mentions, processes them, and replies with GPT-4 modified text.
 
 - lambda_handler(event, context)
- - AWS Lambda handler for triggering the bot. Invokes the reply() function.
+  - AWS Lambda handler for triggering the bot. Invokes the reply() function.
 
 ## Usage
 Set up your Twitter API keys and OpenAI GPT-4 credentials.
